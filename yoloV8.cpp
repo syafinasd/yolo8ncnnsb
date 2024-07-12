@@ -157,7 +157,7 @@ static void generate_grids_and_stride(const int target_w, const int target_h, st
 static void generate_proposals(std::vector<GridAndStride> grid_strides, const ncnn::Mat& pred, float prob_threshold, std::vector<Object>& objects)
 {
     const int num_points = grid_strides.size();
-    const int num_class = 80;
+    const int num_class = 50;
     const int reg_max_1 = 16;
 
     for (int i = 0; i < num_points; i++)
@@ -248,8 +248,8 @@ int YoloV8::load(int _target_size)
 
     yolo.opt.num_threads = 4;
 
-    yolo.load_param("./yolov8n.param");
-    yolo.load_model("./yolov8n.bin");
+    yolo.load_param("./model.ncnn.param");
+    yolo.load_model("./model.ncnn.bin");
 
     target_size = _target_size;
     mean_vals[0] = 103.53f;
@@ -296,12 +296,12 @@ int YoloV8::detect(const cv::Mat& rgb, std::vector<Object>& objects, float prob_
 
     ncnn::Extractor ex = yolo.create_extractor();
 
-    ex.input("images", in_pad);
+    ex.input("in0", in_pad);
 
     std::vector<Object> proposals;
 
     ncnn::Mat out;
-    ex.extract("output", out);
+    ex.extract("out0", out);
 
     std::vector<int> strides = {8, 16, 32}; // might have stride=64
     std::vector<GridAndStride> grid_strides;
