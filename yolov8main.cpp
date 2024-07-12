@@ -8,7 +8,7 @@
 #include <vector>
 
 YoloV8 yolov8;
-int target_size = 320; // Smaller size for better performance on RPi4
+int target_size = 640; // Smaller size for better performance on RPi4
 
 int main(int argc, char** argv)
 {
