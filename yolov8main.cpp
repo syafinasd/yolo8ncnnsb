@@ -8,7 +8,7 @@
 #include <vector>
 
 YoloV8 yolov8;
-int target_size = 640; // Choose your target size, must be divisible by 32.
+int target_size = 320; // Choose your target size, must be divisible by 32.
 
 int main(int argc, char** argv)
 {
