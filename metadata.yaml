@@ -1,0 +1,63 @@
+description: Ultralytics best model trained on /content/gdrive/MyDrive/produk-kemasan-6/data.yaml
+author: Ultralytics
+date: '2024-07-11T22:10:53.268281'
+version: 8.2.50
+license: AGPL-3.0 License (https://ultralytics.com/license)
+docs: https://docs.ultralytics.com
+stride: 32
+task: detect
+batch: 1
+imgsz:
+- 640
+- 640
+names:
+  0: Adem Sari Panas Dalam
+  1: Ahh Rasa Roti Goguma Korea
+  2: Azarine Acne Gentle Cleansing Foam
+  3: Azarine Sunscreen Gel
+  4: Barakat Pasta Gigi
+  5: Biore Pore Pack with Charcoal
+  6: Biore UV
+  7: Cleo Air Mineral
+  8: Club Air Mineral
+  9: Eiem Beauty Natural Sunscreen
+  10: Emeron Lovely White UV Jeju Orange
+  11: Emina Bright Stuff Face Wash
+  12: Emina Sun Protection
+  13: Energen Rasa Coklat
+  14: Eternalplus
+  15: Focallure 3 in 1 Palette
+  16: FreshCare Hot
+  17: Gimbori Rumput Laut Kering Tabur
+  18: Hot In Cream
+  19: Implora Jelly Tint
+  20: Indomie Rasa Kaldu Ayam
+  21: Indomilk Korean Black Latte
+  22: Le Minerale
+  23: Makarizo Hair Energy Morning Dew
+  24: Master Potato Crisps Rendang
+  25: Milku Susu UHT Rasa Coklat Premium
+  26: Milku Susu UHT Rasa Stroberi
+  27: Mixagrip Flu - Batuk
+  28: Nano Nano Milky Stroberi
+  29: Neo Coffee
+  30: Pop Ice Rasa Anggur
+  31: Pop Ice Rasa Cokelat
+  32: Pop Ice Rasa Taro
+  33: Prochiz Spready Keju Oles
+  34: Promag Herbal
+  35: Qlife Menstrual Care
+  36: Richeese Pasta Keju
+  37: Skintific Sunscreen Mist
+  38: Soffell Wangi Apel
+  39: Standart Pen AE7
+  40: Teh Javana
+  41: Tolakangin
+  42: Tolakangin Anak
+  43: Ultramilk Rasa Taro
+  44: Vape Mat 4.1 MV
+  45: Vit Air Mineral
+  46: Vital Ear Oil
+  47: Vitamin B
+  48: Yplogy Hair Mask Gingseng
+  49: Zen Antibacterial
